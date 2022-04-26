@@ -12,6 +12,159 @@
 .footer {
    font-size: 0.8rem;
 }
-.navbar-light .navbar-toggler-icon {
-background: url(url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 280, 280, 280.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"));
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.box {
+    width: 18rem;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 2rem;
+
+}
+
+.slide-img {
+    height: 26rem;
+    position: relative;
+
+}
+
+.slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+
+.detail-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+}
+
+.type a {
+    color: crimson;
+    margin: 0.5rem 0;
+    font-weight: 700;
+    padding-right: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.type .contesduhasard{
+    letter-spacing: 0rem;
+    font-size: 1rem;
+}
+
+.type .secretdum{
+    letter-spacing: 0rem;
+    font-size: 1.25rem;
+}
+
+.type span {
+    color: black;
+
+}
+
+.price {
+    color: rgb(216, 186, 15);
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.1rem;
+
+}
+
+.overlay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(236, 98, 174, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buy-btn {
+    width: 10rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #252525;
+    font-family: 700;
+    letter-spacing: 0.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 1.25rem;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+.buy-btn:hover {
+    color: #ffffff;
+    background-color: black;
+    transition: all ease 0.3s;
+}
+
+.overlay {
+    visibility: hidden;
+}
+
+.slide-img:hover .overlay {
+    visibility: visible;
+    animation: fade 0.5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
