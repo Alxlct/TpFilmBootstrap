@@ -2,15 +2,18 @@
     width: 2rem;
     height: 2rem;
 }
+
 .size {
     width: 20rem;
     height: 10rem;
 }
+
 .bleu {
     background-color: #4A588A;
 }
+
 .footer {
-   font-size: 0.8rem;
+    font-size: 0.8rem;
 }
 
 
@@ -41,6 +44,8 @@ a {
     box-sizing: border-box;
 
 }
+
+
 
 
 .box {
@@ -90,12 +95,12 @@ a {
     font-size: 1.25rem;
 }
 
-.type .contesduhasard{
+.type .contesduhasard {
     letter-spacing: 0rem;
     font-size: 1.25rem;
 }
 
-.type .secretdum{
+.type .secretdum {
     letter-spacing: 0rem;
     font-size: 1.25rem;
 }
@@ -170,27 +175,47 @@ a {
 }
 
 
- .video {
-     width: 100%;
-     height: 0;
-     padding-bottom: 56.25%;
-     overflow: hidden;
-     position: relative;
- }
+.video {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
 
- .video iframe{
-     width: 100%;
-     height: 100%;
-     position: absolute;
-     top: 0; left: 0;
- }
+.video iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
- .affiche{
-     border-radius: 1.25rem;
+.affiche {
+    border-radius: 1.25rem;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
-   
-     
- }
 
 
- 
+}
+
+
+/****************** Deuxieme page "films" ******************/
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.carte {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 2rem;
+}
