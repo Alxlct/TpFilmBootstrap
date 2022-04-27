@@ -191,6 +191,31 @@ a {
     left: 0;
 }
 
+
+.iframe{
+    width: 70%;
+    position: relative;
+    
+
+}
+
+.iframe::after{
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: calc(315/560*100%);
+}
+
+.iframe iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+
+
 .affiche {
     border-radius: 1.25rem;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
